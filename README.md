@@ -1,34 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 ShareCount - Plataforma de Acompanhamento de Acessos  
 
-## Getting Started
+ShareCount é um site que permite acompanhar quantas pessoas acessaram um link e visualizar um ranking dos acessos.  
 
-First, run the development server:
+## 📌 Funcionalidades  
+- 📊 Exibe a quantidade de acessos ao link  
+- 🏆 Mostra a posição do usuário no ranking  
+- 🔗 Sistema de login por e-mail  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🛠️ Tecnologias Utilizadas  
+- **Frontend**: Next.js, React, TypeScript  
+- **Estilização**: TailwindCSS  
+- **Gerenciamento de Formulário**: React Hook Form + Zod  
+- **Ícones**: Lucide React  
+
+## 🚀 Como Rodar o Projeto  
+
+### 🔧 Requisitos  
+- Node.js **(versão LTS mais recente)**  
+- Gerenciador de pacotes: **npm** ou **yarn**  
+
+### 📥 Instalação  
+```sh
+git clone https://github.com/seu-usuario/sharecount-frontend.git
+cd sharecount
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📧 Contato
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Se você tiver dúvidas ou sugestões, entre em contato:
 
-## Learn More
+- **Email**: joaopedrosantossilva1@outlook.com
+- **GitHub**: [Tederr](https://github.com/Tederr)
+- **LinkedIn**: [João Pedro](https://www.linkedin.com/in/joão-pedro-santos-395a90334/)
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎥 Demonstração
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Você pode conferir a aplicação em funcionamento [aqui](https://tederr.github.io/Mundo-invertido/).
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Divirta-se com o **ShareCount**🚀
