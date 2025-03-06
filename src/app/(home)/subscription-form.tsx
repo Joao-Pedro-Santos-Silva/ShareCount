@@ -18,7 +18,7 @@ type SubscriptionSchema = z.infer<typeof subscriptionSchema>
 
 export function SubscriptionForm() {
 	const router = useRouter()
-	const searchParams = useSearchParams()
+	const searchParams = typeof window !== 'undefined' ? useSearchParams() : null
 
 	const {
 		register,
@@ -29,7 +29,7 @@ export function SubscriptionForm() {
 	})
 
 	async function onSubscribe({ name, email }: SubscriptionSchema) {
-		const referrer = searchParams.get('referrer')
+		const referrer = searchParams?.get('referrer')
 
 		const { subscribeId } = await subscribeToEvent({
 			name,

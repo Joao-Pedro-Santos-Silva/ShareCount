@@ -6,9 +6,8 @@ import { loginToEvent } from '@/http/api'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { LogIn, Mail } from 'lucide-react'
 import { useRouter } from 'next/navigation'
-import { useState } from 'react'
 import { useForm } from 'react-hook-form'
-import { setErrorMap, z } from 'zod'
+import { z } from 'zod'
 
 const loginSchema = z.object({
 	email: z.string().email('Digite um e-mail valido'),
@@ -30,9 +29,9 @@ export function LoginForm() {
 	async function onSubscribe({ email }: LoginSchema) {
 		const { subscribeId } = await loginToEvent(email)
 
-		if (subscribeId === undefined) {
-			return
-		}
+		// if (subscribeId === undefined) {
+		// 	return
+		// }
 
 		router.push(`/invite/${subscribeId}`)
 	}
