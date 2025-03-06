@@ -37,7 +37,7 @@ Se você tiver dúvidas ou sugestões, entre em contato:
 
 ## 🎥 Demonstração
 
-Você pode conferir a aplicação em funcionamento [aqui](https://tederr.github.io/Mundo-invertido/).
+Você pode conferir a aplicação em funcionamento [aqui](https://share-count.vercel.app).
 
 ---
 

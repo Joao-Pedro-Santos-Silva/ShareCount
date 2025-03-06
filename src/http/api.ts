@@ -58,7 +58,7 @@ export type LoginToEvent200 = {
  * @summary Subscribe to event
  */
 export const getSubscribeToEventUrl = () => {
-	return `http://localhost:3333/subscriptions`
+	return `https://sharecount-api.onrender.com/subscriptions`
 }
 
 export const subscribeToEvent = async (
@@ -82,7 +82,7 @@ export const subscribeToEvent = async (
  * @summary Access invite link
  */
 export const getAccessInviteLinkUrl = (subscriberId: string) => {
-	return `http://localhost:3333/invites/${subscriberId}`
+	return `https://sharecount-api.onrender.com/invites/${subscriberId}`
 }
 
 export const accessInviteLink = async (
@@ -104,7 +104,7 @@ export const accessInviteLink = async (
  * @summary Get subscriber ranking invites clicks count
  */
 export const getGetSubscriberInviteClicksUrl = (subscriberId: string) => {
-	return `http://localhost:3333/subscribers/${subscriberId}/ranking/clicks`
+	return `https://sharecount-api.onrender.com/subscribers/${subscriberId}/ranking/clicks`
 }
 
 export const getSubscriberInviteClicks = async (
@@ -126,7 +126,7 @@ export const getSubscriberInviteClicks = async (
  * @summary Get subscriber ranking invites count
  */
 export const getGetSubscriberInviteCountUrl = (subscriberId: string) => {
-	return `http://localhost:3333/subscribers/${subscriberId}/ranking/count`
+	return `https://sharecount-api.onrender.com/subscribers/${subscriberId}/ranking/count`
 }
 
 export const getSubscriberInviteCount = async (
@@ -148,7 +148,7 @@ export const getSubscriberInviteCount = async (
  * @summary Get subscriber ranking position
  */
 export const getGetSubscriberRankingPositionUrl = (subscriberId: string) => {
-	return `http://localhost:3333/subscribers/${subscriberId}/ranking/position`
+	return `https://sharecount-api.onrender.com/subscribers/${subscriberId}/ranking/position`
 }
 
 export const getSubscriberRankingPosition = async (
@@ -170,7 +170,7 @@ export const getSubscriberRankingPosition = async (
  * @summary Get ranking
  */
 export const getGetRankingUrl = () => {
-	return `http://localhost:3333/ranking`
+	return `https://sharecount-api.onrender.com/ranking`
 }
 
 export const getRanking = async (
@@ -191,7 +191,7 @@ export const getRanking = async (
  * @summary Login to event
  */
 export const getLoginToEventUrl = (email: string) => {
-	return `http://localhost:3333/login/${email}`
+	return `https://sharecount-api.onrender.com/login/${email}`
 }
 
 export const loginToEvent = async (

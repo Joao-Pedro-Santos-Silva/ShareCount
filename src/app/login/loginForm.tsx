@@ -29,9 +29,11 @@ export function LoginForm() {
 	async function onSubscribe({ email }: LoginSchema) {
 		const { subscribeId } = await loginToEvent(email)
 
-		// if (subscribeId === undefined) {
-		// 	return
-		// }
+		if (subscribeId === undefined) {
+			return
+		}
+
+		console.log(subscribeId)
 
 		router.push(`/invite/${subscribeId}`)
 	}
