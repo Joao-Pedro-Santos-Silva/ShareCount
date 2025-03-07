@@ -16,7 +16,7 @@ const subscriptionSchema = z.object({
 
 type SubscriptionSchema = z.infer<typeof subscriptionSchema>
 
-export function SubscriptionForm() {
+export async function SubscriptionForm() {
 	const router = useRouter()
 	const searchParams = typeof window !== 'undefined' ? useSearchParams() : null
 

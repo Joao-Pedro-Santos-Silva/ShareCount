@@ -12,7 +12,7 @@ interface InvitePageProps {
 export default async function InvitePage(props: InvitePageProps) {
 	const { subscriberId } = await props.params
 
-	const inviteLink = `https://share-count.vercel.app/invite/${subscriberId}`
+	const inviteLink = `https://sharecount-api.onrender.com/invites/${subscriberId}`
 
 	return (
 		<div className="min-h-dvh flex items-center justify-between gap-16 flex-col md:flex-row">

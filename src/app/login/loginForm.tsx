@@ -15,7 +15,7 @@ const loginSchema = z.object({
 
 type LoginSchema = z.infer<typeof loginSchema>
 
-export function LoginForm() {
+export async function LoginForm() {
 	const router = useRouter()
 
 	const {
